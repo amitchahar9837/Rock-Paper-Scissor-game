@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.font1{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container .header{
+    padding: 25px;
+    /* background-color: rgb(188, 72, 72); */
+}
+.container .header h1,.container .header h3,.container .header h2{
+    padding: 5px;
+    letter-spacing: 1.2px;
+    margin: 5px 0px;
+    color: rgb(255, 200, 127);
+}
+
+.container .main{
+    display: flex;
+    height: 170px;
+    align-items: center;
+    position: relative;
+    color: beige;
+}
+.container .main .human{
+    width: 50%;
+}
+.container .main .computer{
+    width: 45%;
+}
+.container .main .vrLine{
+   width: 2px;
+   height:100%;
+   background-color: red;
+}
+.container .main h3{
+    font-size: 40px;
+}
+#humanvalue,#computervalue{
+    margin-top: 8px;
+}
+.container .info{
+    padding: 10px 0px;
+    color: white;
+}
+.container .buttons{
+    padding: 5px 0px;
+}
+.container .buttons button{
+    padding: 8px 18px;
+    margin: 0px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #cc2b5e; 
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+    background: linear-gradient(to right, #753a88, #cc2b5e);     
+    color:azure;
+    font-size: 22px;
+    border-radius: 8px;
+}
+#reset{
+    padding: 8px;
+}
+#reset button{
+    padding: 6px 18px;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color:transparent;
+    color:rgb(255, 255, 255);
+    font-size: 22px;   
+    transition: 0.3s ease;
+}
+#reset button:hover{
+    border-color: #911c3f;
+    color: #911c3f;
+}
